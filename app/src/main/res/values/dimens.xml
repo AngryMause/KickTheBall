@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_menu_size">35sp</dimen>
+    <dimen name="text_menu_width">180dp</dimen>
+    <dimen name="margit_settings">5dp</dimen>
+    <dimen name="text_padding">2dp</dimen>
+    <dimen name="setting_shop_padding_image">4dp</dimen>
+
+</resources>

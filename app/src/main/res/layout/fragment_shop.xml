@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/il_fon">
+
+
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:text="@string/point"
+        android:textSize="@dimen/text_menu_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style"
+        android:padding="4dp"
+        android:text="@string/buy_bal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_menu_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_point" />
+
+    <ImageView
+        android:id="@+id/iv_purple_ball"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/cherry_color_bal"
+        android:foreground="@drawable/not_bought_style"
+        android:padding="@dimen/setting_shop_padding_image"
+        android:src="@mipmap/il_ball_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ball" />
+
+    <ImageView
+        android:id="@+id/iv_green_ball"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/green_ball"
+        android:foreground="@drawable/not_bought_style"
+        android:padding="@dimen/setting_shop_padding_image"
+        android:src="@mipmap/il_ball_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_purple_ball" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margit_settings"
+        android:layout_marginBottom="4dp"
+        android:text="@string/purple_ball"
+        app:layout_constraintBottom_toTopOf="@+id/iv_purple_ball"
+        app:layout_constraintEnd_toEndOf="@+id/iv_purple_ball"
+        app:layout_constraintStart_toStartOf="@+id/iv_purple_ball" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margit_settings"
+        android:text="@string/green_ball"
+        app:layout_constraintBottom_toTopOf="@+id/iv_green_ball"
+        app:layout_constraintEnd_toEndOf="@+id/iv_green_ball"
+        app:layout_constraintStart_toStartOf="@+id/iv_green_ball" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/price_250"
+        app:layout_constraintEnd_toEndOf="@+id/iv_purple_ball"
+        app:layout_constraintStart_toStartOf="@+id/iv_purple_ball"
+        app:layout_constraintTop_toBottomOf="@+id/iv_purple_ball" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/super_ball"
+        app:layout_constraintBottom_toTopOf="@+id/iv_gradient"
+        app:layout_constraintEnd_toEndOf="@+id/iv_gradient"
+        app:layout_constraintStart_toStartOf="@+id/iv_gradient" />
+
+    <ImageView
+        android:id="@+id/iv_gradient"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/purple_ball"
+        android:foreground="@drawable/not_bought_style"
+        android:padding="@dimen/setting_shop_padding_image"
+        android:src="@mipmap/il_ball_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_green_ball" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margit_settings"
+        android:text="@string/price_1000"
+        app:layout_constraintEnd_toEndOf="@+id/iv_gradient"
+        app:layout_constraintStart_toStartOf="@+id/iv_gradient"
+        app:layout_constraintTop_toBottomOf="@+id/iv_gradient" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margit_settings"
+        android:text="@string/price_500"
+        app:layout_constraintEnd_toEndOf="@+id/iv_green_ball"
+        app:layout_constraintStart_toStartOf="@+id/iv_green_ball"
+        app:layout_constraintTop_toBottomOf="@+id/iv_green_ball" />
+</androidx.constraintlayout.widget.ConstraintLayout>
